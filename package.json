@@ -4,7 +4,12 @@
   "description": "A simple todo list.",
   "main": "index.js",
   "type": "module",
-  "bin": "index.js",
+  "bin": {
+    "hanzalas-todo-list": "index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/dev-hanzala/hanzalas-todo-list/issues"
   },
-  "homepage": "https://github.com/dev-hanzala/hanzalas-todo-list#readme"
+  "homepage": "https://github.com/dev-hanzala/hanzalas-todo-list#readme",
+  "dependencies": {
+    "inquirer": "^9.2.17"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
 }
